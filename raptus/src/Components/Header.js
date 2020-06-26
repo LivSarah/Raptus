@@ -1,9 +1,12 @@
 import React from 'react'
+import './Styles/Header.scss'
 
 function Header() {
   return (
-    <div>
-      <h1>Raptusfestivalen</h1>
+      <div className="Header">
+        <header>
+            <h1>Raptusfestivalen</h1>
+        </header>
     </div>
   )
 }
