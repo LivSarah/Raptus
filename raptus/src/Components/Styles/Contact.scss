@@ -1,0 +1,30 @@
+.Contact {
+    background-color: grey;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.title {
+    transform: rotate(-10deg);
+    font-family: 'Permanent Marker';
+    font-size: 2.5em;
+    margin: 10px 40px 40px;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.info {
+    font-family: 'Montserrat';
+    line-height: 25px;
+    width: 350px;
+}
+
+.contact-form {
+    width: 350px;
+}
