@@ -3,7 +3,7 @@ import './Styles/Header.scss'
 
 function Header() {
   return (
-      <div className="Header">
+    <div className="Header">
         <header>
             <div className="overlay">
                 <div className="logo-wrapper">
