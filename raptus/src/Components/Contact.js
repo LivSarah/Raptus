@@ -1,5 +1,6 @@
 import React from 'react'
 import './Styles/Contact.scss'
+import ContactForm from './ContactForm'
 
 function Contact() {
   return (
@@ -13,9 +14,7 @@ function Contact() {
                 Du finner oss på både Facebook og Instagram.
                 </span>
             </div>
-            <div classNamme="contact-form">
-                <p>Kommer kontaktskjema her</p>
-            </div>
+            <ContactForm/>
         </div>
     </div>
   )
