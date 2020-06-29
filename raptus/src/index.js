@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import App from './App';
 import Header from './Components/Header';
 import Contact from './Components/Contact';
+import ActivitiesBar from './Components/ActivitiesBar';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
     <Header />
+    <ActivitiesBar />
     <Contact />
   </React.StrictMode>,
   document.getElementById('root')
