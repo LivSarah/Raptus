@@ -4,11 +4,13 @@ import './index.scss';
 import Header from './Components/Header';
 import Contact from './Components/Contact';
 import ActivitiesBar from './Components/ActivitiesBar';
+import StarringBar from './Components/StarringBar';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
     <Header />
+    <StarringBar />
     <ActivitiesBar />
     <Contact />
   </React.StrictMode>,
