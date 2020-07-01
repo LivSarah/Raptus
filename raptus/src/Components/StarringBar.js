@@ -1,6 +1,15 @@
-import React from 'react';
+import React from 'react'
+import './Styles/StarringBar.scss';
 
-/*
-list of 3 guest-id's from database to showcase in the starring-bar on the front page, using name, image and title. 
-4th and last frame should be "Se alle gjestene". 
-*/
+function StarringBar() {
+  return (
+    <div className="Starring-Bar">
+        <a href="/"><img src={require('../Assets/Images/mike-perkins.jpg')} alt="mike-perkins"/></a>
+        <a href="/"><img src={require('../Assets/Images/mike-collins.jpg')} alt="mike-collins"/></a>
+        <a href="/"><img src={require('../Assets/Images/barry-kitson.jpg')} alt="barry-kitson"/></a>
+        <a href="/"><img src={require('../Assets/Images/se-alle-gjester.jpg')} alt="view-all-guests"/></a>
+    </div>
+  )
+}
+
+export default StarringBar
