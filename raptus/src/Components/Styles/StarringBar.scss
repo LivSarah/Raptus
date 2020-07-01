@@ -1,0 +1,14 @@
+.Starring-Bar {
+    height: 250px;
+    background-color: white;
+    border-bottom: solid white 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+}
