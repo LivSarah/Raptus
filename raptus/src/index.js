@@ -5,6 +5,8 @@ import Header from './Components/Header';
 import Contact from './Components/Contact';
 import ActivitiesBar from './Components/ActivitiesBar';
 import StarringBar from './Components/StarringBar';
+import QuoteAndApplyBar from './Components/QuoteAndApplyBar';
+import Footer from './Components/Footer';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
@@ -12,7 +14,9 @@ ReactDOM.render(
     <Header />
     <StarringBar />
     <ActivitiesBar />
+    <QuoteAndApplyBar />
     <Contact />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );
