@@ -1,13 +1,22 @@
 .QuoteAndApplyBar {
-    height: 400px;
+    height: 600px;
     display: flex;
     flex-direction: row;
+    border-bottom: white solid 9px;
 } 
 
 .quote-container {
-    background-color: yellow;
+    background-color: #006106;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+    width: 50%;
 }
 
 .apply-container {
-    background-color: red;
+    background-color: #001861;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");  
+    width: 50%;
+}
+
+.divider {
+    width: 9px;
 }
