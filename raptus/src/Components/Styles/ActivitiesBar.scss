@@ -1,10 +1,11 @@
 .ActivitiesBar {
     background-color: #fae825;
+    background-image: url("https://www.transparenttextures.com/patterns/connected.png");
     display: flex;
     flex-direction: column;
     padding: 90px;
     align-items: center;
-    border-bottom: solid 6px white;
+    border-bottom: solid 9px white;
     span {
         transform: rotate(-10deg);
         font-family: 'Tillana';
