@@ -1,5 +1,6 @@
 .Footer {
     height: 100px;
+    padding: 20px;  
     background-color: #9c9400;
     background-image: url("https://www.transparenttextures.com/patterns/dust.png");
     display: flex;
@@ -7,4 +8,9 @@
     justify-content: center;
     color: white;
     font-size: 18px;
+    text-align: center;
+
+    p {
+        margin-bottom: 0;
+    }
 }
