@@ -7,6 +7,7 @@ import ActivitiesBar from './Components/ActivitiesBar';
 import StarringBar from './Components/StarringBar';
 import QuoteAndApplyBar from './Components/QuoteAndApplyBar';
 import Footer from './Components/Footer';
+import SponsorsBar from './Components/SponsorsBar';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
@@ -15,6 +16,7 @@ ReactDOM.render(
     <StarringBar />
     <ActivitiesBar />
     <QuoteAndApplyBar />
+    <SponsorsBar />
     <Contact />
     <Footer />
   </React.StrictMode>,
