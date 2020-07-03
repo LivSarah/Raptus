@@ -1,3 +1,6 @@
 .ContactForm {
-    width: 400px;
+    width: 100%;
+    @media (max-width: 800px) {
+        margin-top: 20px;
+    }
 }
