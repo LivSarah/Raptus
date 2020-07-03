@@ -20,45 +20,35 @@ header .overlay{
     background-color: rgba(0, 0, 0, 0.7);
 	
 }
-
-h1 {
-	font-family: 'Dancing Script', cursive;
-	font-size: 80px;
-	margin-bottom: 30px;
+.Header {
+	h1 {
+		font-family: 'Dancing Script', cursive;
+		font-size: 80px;
+		margin-bottom: 30px;
+	}
+	
+	h3, p {
+		font-family: 'Open Sans', sans-serif;
+		margin-bottom: 30px;
+	}
+	
+	button {
+		border: none;
+		outline: none;
+		padding: 10px 20px;
+		border-radius: 50px;
+		color: #333;
+		background: #fff;
+		margin-bottom: 50px;
+		box-shadow: 0 3px 20px 0 #0000003b;
+	}
+	button:hover{
+		cursor: pointer;
+	}
 }
 
-h3, p {
-	font-family: 'Open Sans', sans-serif;
-	margin-bottom: 30px;
-}
-
-button {
-	border: none;
-	outline: none;
-	padding: 10px 20px;
-	border-radius: 50px;
-	color: #333;
-	background: #fff;
-	margin-bottom: 50px;
-	box-shadow: 0 3px 20px 0 #0000003b;
-}
-button:hover{
-	cursor: pointer;
-}
-
-.logo-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .talk-bubble {
-        width: fit-content;
-        position: relative;
-        right: -220px;
-        top: 30px;
-    }
-
-    .logo {
-        width: fit-content;
-    }
+.logo {
+	width: 80%;
+	max-width: 800px;
+	margin-bottom: 15px;
 }
