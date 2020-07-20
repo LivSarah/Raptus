@@ -1,0 +1,37 @@
+.SponsorsBar {
+    background-color: #ccc5c2;
+    background-image: url("https://www.transparenttextures.com/patterns/dust.png");
+    min-height: 150px;
+    padding: 30px;
+    border-bottom: solid white 9px;
+
+    .our-sponsors {
+        color: #555555;
+        font-family: 'Tillana';
+        font-size: 23px;
+        font-weight: bold;
+        transform: rotate(-10deg);
+        margin: 0 20px 20px 0;
+    }
+    
+    .divider {
+        width: 50px;
+    }
+
+    .content-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 800px) {
+            flex-direction: column;
+        }
+        img {
+            height: 70px;
+            @media (max-width: 800px) {
+                margin-bottom: 20px;   
+            }    
+        }
+    }
+}

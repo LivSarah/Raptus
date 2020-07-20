@@ -1,0 +1,38 @@
+.ActivitiesBar {
+    background-color: #fae825;
+    background-image: url("https://www.transparenttextures.com/patterns/connected.png");
+    display: flex;
+    flex-direction: column;
+    padding: 90px 30px 30px;
+    align-items: center;
+    border-bottom: solid 9px white;
+    span {
+        transform: rotate(-10deg);
+        font-family: 'Tillana';
+        font-size: 3em;
+        color: #FF5141;
+        margin-top: -50px;
+        @media (max-width: 800px) {
+            font-size: 2em;
+        }
+    
+    }
+    h4 {
+        margin-top: 40px;
+        font-weight: bold;
+        color: #1427B8;
+        text-align: center;
+    }
+    p {
+        font-family: 'Montserrat';
+        font-weight: bold;
+        text-align: center;
+        color: #1427B8;
+        max-width: 700px;
+        line-height: 30px;
+    }
+    Button {
+        background-color: transparent;
+        min-width: 150px;
+    }
+}

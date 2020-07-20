@@ -1,0 +1,77 @@
+.QuoteAndApplyBar {
+    display: flex;
+    flex-direction: row;
+    border-bottom: white solid 9px;
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
+} 
+
+.quote-container {
+    background-color: #006106;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 800px) {
+        width: 100%;
+        border-bottom: solid white 9px;
+    }
+
+    .bubble-and-quote {
+        position: relative;
+        text-align: center;
+    }
+    img {
+        width: 100%;
+        max-width: 600px;
+    }
+    .quote {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        font-weight: bold;
+        transform: translate(-50%, -50%);
+        font-size: 19px;
+        @media (max-width: 800px) {
+            font-size: 15px;
+        }
+    }
+    .quote-owner {
+        font-family: 'Montserrat';
+        color: white;
+        font-size: 18px;
+        margin: 20px 0;
+    }
+}
+
+.apply-container {
+    background-color: #021b88;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");  
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 800px) {
+        width: 100%;
+    }
+
+    p {
+        font-family: 'Tillana';
+        color: #FF5141;
+        font-size: 70px;
+        text-align: center;
+        transform: rotate(-10deg);
+        @media (max-width: 800px) {
+            font-size: 50px;
+        }
+    }
+}
+
+.divider {
+    width: 9px;
+}
