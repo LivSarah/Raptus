@@ -11,7 +11,6 @@
     background-color: #006106;
     background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
     width: 50%;
-    height: 100%;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -52,11 +51,10 @@
     background-color: #021b88;
     background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");  
     width: 50%;
-    padding: 30px;
+    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
 
     @media (max-width: 800px) {
         width: 100%;
@@ -66,7 +64,11 @@
         font-family: 'Tillana';
         color: #FF5141;
         font-size: 70px;
+        text-align: center;
         transform: rotate(-10deg);
+        @media (max-width: 800px) {
+            font-size: 50px;
+        }
     }
 }
 
