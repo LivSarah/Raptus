@@ -11,6 +11,7 @@
 
     .guest-container {
         width: 100%;
+        position: relative;
         display: flex;
         flex-direction: row;
     }
@@ -30,5 +31,25 @@
 
     .divider {
         width: 9px;
+    }
+    
+    .guest-name {
+        color: white;
+        position: absolute;
+        width: fit-content; 
+        left: 50%; 
+        -webkit-transform: translate(-50%, 0); 
+        bottom: 17px;
+        font-size: 22px;
+    }
+
+    .guest-profession {
+        color: white; 
+        position: absolute;
+        width: fit-content; 
+        left: 50%; 
+        -webkit-transform: translate(-50%, 0);
+        bottom: 0px;
+        font-size: 18px;
     }
 }
