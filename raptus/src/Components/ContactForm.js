@@ -44,7 +44,7 @@ class ContactForm extends React.Component {
                         <Form.Label>Melding</Form.Label>
                         <Form.Control name="message" as="textarea" rows="3" placeholder="Din melding til oss..." />
                     </FormGroup>
-                    <Button type="submit" className="btn btn-dark" onClick={this.handleSubmit}>Send</Button>
+                    <Button type="submit" className="btn btn-light" onClick={this.handleSubmit}>Send</Button>
                 </Form>
             </div>
         )
