@@ -4,9 +4,9 @@ import './Styles/StarringBar.scss';
 function StarringBar() {
 
   const guests = [
-    {href: '/', alt: "mike-perkins", img: require('../../Assets/Images/mike-perkins.jpg'), name: "Mike Perkjins", profession: "Artist"},
-    {href: '/', alt: "mike-collins", img: require('../../Assets/Images/mike-collins.jpg'), name: "Mike Collins", profession: "Artist"},
-    {href: '/', alt: "barry-kitson", img: require('../../Assets/Images/barry-kitson.jpg'), name: "Barry Kitson", profession: "Artist"}
+    {href: '/', alt: "mike-perkins", img: require('../../Assets/Images/mike-perkins.jpg'), name: "Mike Perkins", profession: "Illustratør"},
+    {href: '/', alt: "mike-collins", img: require('../../Assets/Images/mike-collins.jpg'), name: "Mike Collins", profession: "Illustratør"},
+    {href: '/', alt: "barry-kitson", img: require('../../Assets/Images/barry-kitson.jpg'), name: "Barry Kitson", profession: "Illustratør"}
   ];
 
   return (
@@ -14,6 +14,8 @@ function StarringBar() {
       {guests.map((value, index) => {
         return <div className="guest-container">
                 <a href={value.href} key={index}><img src={value.img} alt={value.alt}/></a>
+                <p className="guest-name">{value.name}</p>
+                <p className="guest-profession">{value.profession}</p>
                 <div className="divider"/>
               </div>
         })}
