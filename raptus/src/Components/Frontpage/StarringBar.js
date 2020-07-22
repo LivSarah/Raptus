@@ -13,10 +13,12 @@ function StarringBar() {
     <div className="Starring-Bar">
       {guests.map((value, index) => {
         return <div className="guest-container">
-                <a href={value.href} key={index}><img src={value.img} alt={value.alt}/></a>
-                <p className="guest-name">{value.name}</p>
-                <p className="guest-profession">{value.profession}</p>
-                <div className="divider"/>
+                <a href={value.href} key={index}>
+                  <div className="color-tint"/>
+                  <img src={value.img} alt={value.alt}/>
+                  <p className="guest-name">{value.name}</p>
+                  <p className="guest-profession">{value.profession}</p>
+                </a>
               </div>
         })}
         <div className="guest-container">
