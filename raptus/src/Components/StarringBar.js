@@ -4,9 +4,9 @@ import './Styles/StarringBar.scss';
 function StarringBar() {
 
   const guests = [
-    {href: '/', alt: "mike-perkins", img: require('../../Assets/Images/mike-perkins.jpg'), name: "Mike Perkins", profession: "Illustratør"},
-    {href: '/', alt: "mike-collins", img: require('../../Assets/Images/mike-collins.jpg'), name: "Mike Collins", profession: "Illustratør"},
-    {href: '/', alt: "barry-kitson", img: require('../../Assets/Images/barry-kitson.jpg'), name: "Barry Kitson", profession: "Illustratør"}
+    {href: '/', alt: "mike-perkins", img: require('../Assets/Images/mike-perkins.jpg'), name: "Mike Perkins", profession: "Illustratør", id: 1},
+    {href: '/', alt: "mike-collins", img: require('../Assets/Images/mike-collins.jpg'), name: "Mike Collins", profession: "Illustratør", id: 2},
+    {href: '/', alt: "barry-kitson", img: require('../Assets/Images/barry-kitson.jpg'), name: "Barry Kitson", profession: "Illustratør", id: 3}
   ];
 
   return (
@@ -23,9 +23,9 @@ function StarringBar() {
                 z' />
         </svg>
       </div>
-      {guests.map((value, index) => {
-        return <div className="guest-container">
-                <a href={value.href} key={index}>
+      {guests.map((value) => {
+        return <div className="guest-container" key={value.id}>
+                <a href={value.href}>
                   <div className="color-tint"/>
                   <img src={value.img} alt={value.alt}/>
                   <p className="guest-name">{value.name}</p>
@@ -34,7 +34,7 @@ function StarringBar() {
               </div>
         })}
         <div className="guest-container">
-          <a href="/"><img src={require('../../Assets/Images/se-alle-gjester.jpg')} alt={"view-all-guests"}/></a>
+          <a href="/"><img src={require('../Assets/Images/se-alle-gjester.jpg')} alt={"view-all-guests"}/></a>
         </div>
     </div>
   )
