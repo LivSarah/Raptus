@@ -3,7 +3,7 @@ import './Styles/SponsorsBar.scss';
 
 function SponsorsBar() {
     return (
-      <div className="SponsorsBar">
+      <section className="SponsorsBar">
           <div className="content-wrapper">
             <p className="our-sponsors">Våre<br/>sponsorer: </p>
             <div className="divider" />
@@ -13,7 +13,7 @@ function SponsorsBar() {
             <div className="divider" />
             <img src={require('../Assets/Images/bergen-kommune.png')} alt="bergen-kommune-logo"/>
           </div>
-      </div>
+      </section>
     )
   }
   
