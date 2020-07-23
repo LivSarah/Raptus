@@ -1,33 +1,40 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './index.scss';
-import { Home } from './Views/Home'
+import { Home } from './Views/Home';
+import { Guests } from './Views/Guests';
+import { Program } from './Views/Program';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import SponsorsBar from './Components/SponsorsBar';
+import {Header} from './Components/Header';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Link to="/">Hjem</Link>
-      
-      <Link to="/gjester">Gjester</Link>
+      <Header />
 
-      <Switch>
-        <Route path="/gjester">
-          <h1>GJESTER</h1>
-        </Route>
+      <main>
+        <Switch>
+          <Route path="/gjester">
+            <Guests />
+          </Route>
 
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
+          <Route path="/program">
+            <Program />
+          </Route>
 
-      <SponsorsBar />
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
 
-      <Contact />
+        <SponsorsBar /> 
+
+        <Contact />
+      </main>
 
       <Footer />
     </Router>
