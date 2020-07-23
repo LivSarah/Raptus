@@ -1,24 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import './index.scss';
-import Header from './Components/Header';
+import { Home } from './Views/Home'
 import Contact from './Components/Contact';
-import ActivitiesBar from './Components/Frontpage/ActivitiesBar';
-import StarringBar from './Components/Frontpage/StarringBar';
-import QuoteAndApplyBar from './Components/Frontpage/QuoteAndApplyBar';
 import Footer from './Components/Footer';
-import SponsorsBar from './Components/Frontpage/SponsorsBar';
+import SponsorsBar from './Components/SponsorsBar';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
-    <StarringBar />
-    <ActivitiesBar />
-    <QuoteAndApplyBar />
-    <SponsorsBar />
-    <Contact />
-    <Footer />
+    <Router>
+      <Link to="/">Hjem</Link>
+      
+      <Link to="/gjester">Gjester</Link>
+
+      <Switch>
+        <Route path="/gjester">
+          <h1>GJESTER</h1>
+        </Route>
+
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+
+      <SponsorsBar />
+
+      <Contact />
+
+      <Footer />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
