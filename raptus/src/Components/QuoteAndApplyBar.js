@@ -3,7 +3,7 @@ import './Styles/QuoteAndApplyBar.scss';
 
 function QuoteAndApplyBar() {
   return (
-    <div className="QuoteAndApplyBar">
+    <section className="QuoteAndApplyBar">
         <div className="quote-container">
             <div className="bubble-and-quote">
                 <p className="quote">"Dette er et kjempebra sitat av en eller annen person!"</p>
@@ -15,7 +15,7 @@ function QuoteAndApplyBar() {
         <div className="apply-container">
             <p>SØK FRIVILLIG, INTERVJUER OG STAND HER</p>
         </div>
-    </div>
+    </section>
   )
 }
 
