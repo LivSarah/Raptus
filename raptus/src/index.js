@@ -10,34 +10,37 @@ import Footer from './Components/Footer';
 import SponsorsBar from './Components/SponsorsBar';
 import {Header} from './Components/Header';
 import * as serviceWorker from './serviceWorker';
+import Firebase, { FirebaseContext } from './Components/Firebase';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <Header />
+    <FirebaseContext.Provider value={new Firebase()}>
+      <Router>
+        <Header />
 
-      <main>
-        <Switch>
-          <Route path="/gjester">
-            <Guests />
-          </Route>
+        <main>
+          <Switch>
+            <Route path="/gjester">
+              <Guests />
+            </Route>
 
-          <Route path="/program">
-            <Program />
-          </Route>
+            <Route path="/program">
+              <Program />
+            </Route>
 
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
 
-        <SponsorsBar /> 
+          <SponsorsBar /> 
 
-        <Contact />
-      </main>
+          <Contact />
+        </main>
 
-      <Footer />
-    </Router>
+        <Footer />
+      </Router>
+    </FirebaseContext.Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
