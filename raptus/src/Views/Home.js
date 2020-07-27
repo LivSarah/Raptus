@@ -9,14 +9,8 @@ import { Person } from '../Components/Person'
 export const Home = () => (
     <>
         <Hero />
-        {/*<StarringBar />*/}
-        <GuestsCollection>
-            {(guests) => (
-                guests.map((guest) => (
-                    <Person image={guest.image} href="#" />
-                ))
-            )}
-        </GuestsCollection>
+        <StarringBar />
+
         <ActivitiesBar />
         <QuoteAndApplyBar />
     </>
