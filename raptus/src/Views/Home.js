@@ -7,9 +7,11 @@ import QuoteAndApplyBar from '../Components/QuoteAndApplyBar';
 export const Home = () => (
     <>
         <Hero />
+
         <StarringBar />
 
         <ActivitiesBar />
+        
         <QuoteAndApplyBar />
     </>
 );
