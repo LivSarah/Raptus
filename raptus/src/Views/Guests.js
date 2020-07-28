@@ -1,7 +1,10 @@
 import React from "react";
+import './Guests.scss';
 
 export const Guests = () => (
-    <>
-        <h1>GJESTER</h1>
-    </>
+    <section className="Guests">
+        <header>
+            <h1>Årets GJESTER</h1>
+        </header>
+    </section>
 );
