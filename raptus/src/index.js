@@ -8,7 +8,7 @@ import { Program } from './Views/Program';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import SponsorsBar from './Components/SponsorsBar';
-import {Header} from './Components/Header';
+import {Navbar} from './Components/Navbar';
 import * as serviceWorker from './serviceWorker';
 import Firebase, { FirebaseContext } from './Components/Firebase';
 
@@ -16,7 +16,7 @@ ReactDOM.render(
   <React.StrictMode>
     <FirebaseContext.Provider value={new Firebase()}>
       <Router>
-        <Header />
+        <Navbar />
 
         <main>
           <Switch>
