@@ -14,7 +14,7 @@ export const Guests = () => (
             <GuestsCollection>
               {(guests) => (
                   guests.map((guest) => (
-                      <Person props={guest}/>
+                      <Person name={guest.name} profession={guest.profession} image={guest.image} href="/" clickable={guest.clickable} key={guest.id}/>
                 ))
               )}
             </GuestsCollection>
