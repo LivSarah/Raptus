@@ -20,10 +20,17 @@ function StarringBar() {
         </svg>
       </div>
       <div className="guests-grid">
-        <GuestsCollection>
+        <GuestsCollection starring={true}>
           {(guests) => (
               guests.map((guest) => (
-                  <Person name={guest.name} profession={guest.profession} image={guest.image} href="/" key={guest.id}/>
+                  <Person 
+                    name={guest.name} 
+                    profession={guest.profession} 
+                    image={guest.image} 
+                    href={guest.name} 
+                    clickable={guest.clickable} 
+                    key={guest.name}
+                  />
               ))
           )}
         </GuestsCollection>
