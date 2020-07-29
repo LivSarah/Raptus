@@ -1,26 +1,24 @@
 *{padding: 0; margin: 0; box-sizing: border-box;}
-body{height: 900px;}
-header {
-	background: url('http://serienett.no/wp-content/uploads/2019/09/Raptus-2019-startbilde-611x334.jpg');
-	text-align: center;
-	width: 100%;
-	background-size: cover;
-	background-attachment: fixed;
-	position: relative;
-    overflow: hidden;
-    border-bottom: solid 9px white;
-}
-header .overlay{
-	width: 100%;
-	min-height: 450px;
-	height: 100%;
-	padding: 10px 50px;
-	color: #FFF;
-	text-shadow: 1px 1px 1px #333;
-    background-color: rgba(0, 0, 0, 0.4);
-	
-}
+
 .Hero {
+		background: url('http://serienett.no/wp-content/uploads/2019/09/Raptus-2019-startbilde-611x334.jpg');
+		text-align: center;
+		width: 100%;
+		background-size: cover;
+		background-attachment: fixed;
+		position: relative;
+		overflow: hidden;
+		border-bottom: solid 9px white;
+	.overlay{
+		width: 100%;
+		min-height: 450px;
+		height: 100%;
+		padding: 10px 50px;
+		color: #FFF;
+		text-shadow: 1px 1px 1px #333;
+		background-color: rgba(0, 0, 0, 0.4);
+		
+	}
 	h1 {
 		font-family: 'Dancing Script', cursive;
 		font-size: 80px;
