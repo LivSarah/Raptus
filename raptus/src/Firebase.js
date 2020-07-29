@@ -22,6 +22,14 @@ class Firebase {
     guests() {
         return this.db.collection('guests').get();
     }
+
+    numberOfGuests(number) {
+        return this.db.collection('guests').limit(number).get();
+    }
+
+    starringGuests() {
+        return this.db.collection('guests').where("starring", "==", true).limit(3).get();
+    }
 }
 
 export default Firebase;
