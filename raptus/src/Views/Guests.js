@@ -17,7 +17,7 @@ export const Guests = () => (
                       <Person 
                         name={guest.name} 
                         profession={guest.profession} 
-                        image={guest.image} href="/" 
+                        image={guest.image} href={guest.name} 
                         clickable={guest.clickable} 
                         key={guest.name}
                       />
