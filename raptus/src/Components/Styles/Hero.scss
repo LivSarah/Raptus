@@ -14,9 +14,9 @@
 		min-height: 450px;
 		height: 100%;
 		padding: 10px 50px;
-		color: #FFF;
+		color: #fff;
 		text-shadow: 1px 1px 1px #333;
-		background-color: rgba(0, 0, 0, 0.4);
+		background-color: rgba(0, 0, 0, 0.5);
 		
 	}
 	h1 {
@@ -25,9 +25,17 @@
 		margin-bottom: 30px;
 	}
 	
-	h3, p {
+	h2, h3 {
 		font-family: 'Open Sans', sans-serif;
 		margin-bottom: 30px;
+	}
+
+	.information-container {
+		padding: 20px;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		border: 1px solid white;
+		margin-bottom: 60px;
 	}
 	
 	button {
@@ -37,7 +45,6 @@
 		border-radius: 50px;
 		color: #333;
 		background: #fff;
-		margin-bottom: 50px;
 		box-shadow: 0 3px 20px 0 #0000003b;
 	}
 	button:hover{
