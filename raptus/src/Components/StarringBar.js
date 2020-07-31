@@ -1,7 +1,8 @@
 import React from 'react'
 import './Styles/StarringBar.scss';
 import { GuestsCollection } from '../Components/GuestsCollection';
-import { Person } from '../Components/Person'
+import { Person } from '../Components/Person';
+import { Link } from "react-router-dom";
 
 function StarringBar() {
 
@@ -27,7 +28,7 @@ function StarringBar() {
                     name={guest.name} 
                     profession={guest.profession} 
                     image={guest.image} 
-                    href={guest.name} 
+                    to={`/gjester/${guest.name}`} 
                     clickable={guest.clickable} 
                     key={guest.name}
                   />
@@ -35,7 +36,7 @@ function StarringBar() {
           )}
         </GuestsCollection>
         <div className="view-all-guests">
-          <a href="/"><img src={require('../Assets/Images/se-alle-gjester.jpg')} alt={"view-all-guests"}/></a>
+          <Link to="/gjester"><img src={require('../Assets/Images/se-alle-gjester.jpg')} alt={"view-all-guests"}/></Link>
         </div>
       </div>
     </section>
