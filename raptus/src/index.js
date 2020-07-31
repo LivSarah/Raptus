@@ -11,20 +11,27 @@ import SponsorsBar from './Components/SponsorsBar';
 import {Navbar} from './Components/Navbar';
 import * as serviceWorker from './serviceWorker';
 import Firebase, { FirebaseContext } from './Components/Firebase';
+import { Guest } from './Views/Guest';
+import { ScrollToTop } from './Components/ScrollToTop';
 
 ReactDOM.render(
   <React.StrictMode>
     <FirebaseContext.Provider value={new Firebase()}>
       <Router>
+        <ScrollToTop />
         <Navbar />
 
         <main>
           <Switch>
-            <Route path="/gjester">
+            <Route exact path="/gjester">
               <Guests />
             </Route>
 
-            <Route path="/program">
+            <Route path="/gjester/:name">
+              <Guest />
+            </Route>
+
+            <Route exact path="/program">
               <Program />
             </Route>
 
