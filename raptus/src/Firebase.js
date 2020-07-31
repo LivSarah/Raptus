@@ -19,16 +19,25 @@ class Firebase {
         this.db = app.firestore();
     }
 
-    guests() {
-        return this.db.collection('guests').get();
+    unwrapData(snapshot) {
+        return snapshot.docs.map((doc) => (
+            doc.data()
+        ));
     }
 
-    numberOfGuests(number) {
-        return this.db.collection('guests').limit(number).get();
+    async guests() {
+        const snapshot = await this.db.collection('guests').get();
+        return this.unwrapData(snapshot);
     }
 
-    starringGuests() {
-        return this.db.collection('guests').where("starring", "==", true).limit(3).get();
+    async starringGuests() {
+        const snapshot = await this.db.collection('guests').where("starring", "==", true).limit(3).get();
+        return this.unwrapData(snapshot);
+    }
+
+    async guestByName(name) {
+        const snapshot = await this.db.collection('guests').where("name", "==", name).limit(1).get();
+        return this.unwrapData(snapshot)[0];
     }
 }
 
