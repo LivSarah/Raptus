@@ -4,7 +4,7 @@ import { GuestsCollection } from '../Components/GuestsCollection';
 import { Person } from '../Components/Person'
 
 export const Guests = () => (
-    <section className="Guests">
+    <article className="Guests">
         <header>
             <h4>Årets</h4>
             <h1>GJESTER</h1>
@@ -17,7 +17,8 @@ export const Guests = () => (
                       <Person 
                         name={guest.name} 
                         profession={guest.profession} 
-                        image={guest.image} href={guest.name} 
+                        image={guest.image} 
+                        to={`/gjester/${guest.name}`}
                         clickable={guest.clickable} 
                         key={guest.name}
                       />
@@ -25,5 +26,5 @@ export const Guests = () => (
               )}
             </GuestsCollection>
         </div>
-    </section>
+    </article>
 );
