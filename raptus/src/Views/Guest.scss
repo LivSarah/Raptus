@@ -4,5 +4,29 @@
     background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     padding: 60px 20px;
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
     
+    
+    .guest-portrait {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        overflow: hidden;
+        box-shadow: white 9px;
+        margin-right: 5%;
+    }
+
+    .guest-name {
+        color: white;
+    }
+
+    .guest-bio {
+        color: white;
+    }
 }
