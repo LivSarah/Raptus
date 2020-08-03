@@ -12,9 +12,11 @@ export const Guest = withFirebase(({ firebase }) => {
     if (guest) {
         return (
             <article className="Guest">
-              <h3>NAVN: {guest.name}</h3>
-              <img src={guest.image}></img>
-              <p>{guest.bio}</p>
+              <img className="guest-portrait" src={guest.image}></img>
+              <div>
+                <h3 className="guest-name">{guest.name}</h3>
+                <p className="guest-bio">{guest.bio}</p>
+              </div>
             </article>
           );    
     } else {
