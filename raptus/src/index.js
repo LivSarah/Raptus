@@ -5,6 +5,9 @@ import './index.scss';
 import { Home } from './Views/Home';
 import { Guests } from './Views/Guests';
 import { Program } from './Views/Program';
+import { Stands } from './Views/Stands';
+import { Cosplay } from './Views/Cosplay';
+import { Frivillig } from './Views/Frivillig';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import SponsorsBar from './Components/SponsorsBar';
@@ -33,6 +36,18 @@ ReactDOM.render(
 
             <Route exact path="/program">
               <Program />
+            </Route>
+
+            <Route exact path="/cosplay">
+              <Cosplay />
+            </Route>
+
+            <Route exact path="/stands">
+              <Stands />
+            </Route>
+
+            <Route exact path="/frivillig">
+              <Frivillig />
             </Route>
 
             <Route path="/">
