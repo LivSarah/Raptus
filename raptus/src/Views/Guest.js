@@ -7,7 +7,8 @@ import { usePromise } from '../Utils/usePromise';
 export const Guest = withFirebase(({ firebase }) => {
     const { name } = useParams();
 
-    const guest = usePromise(firebase.guestByName(name));           
+    const guest = usePromise(firebase.guestByName(name));  
+    const expectedNewline = /\\n/g;
 
     if (guest) {
         return (
@@ -15,7 +16,7 @@ export const Guest = withFirebase(({ firebase }) => {
               <img className="guest-portrait" src={guest.image}></img>
               <div>
                 <h3 className="guest-name">{guest.name}</h3>
-                <p className="guest-bio">{guest.bio}</p>
+                <p style={{'whiteSpace': 'pre-wrap'}} className="guest-bio">{guest.bio.replace(expectedNewline, '\n\n')}</p>
               </div>
             </article>
           );    
