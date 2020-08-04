@@ -9,5 +9,11 @@ export const Navbar = () => (
         <Link to="/gjester">Gjester</Link>
 
         <Link to="/program">Program</Link>
+
+        <Link to="/cosplay">Cosplay</Link>
+
+        <Link to="/stands">Stands</Link>
+
+        <Link to="/frivillig">Frivillig</Link>
     </section>
 );
