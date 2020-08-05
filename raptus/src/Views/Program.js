@@ -1,7 +1,8 @@
 import React from "react";
+import { PageHeader } from '../Components/PageHeader';
 
 export const Program = () => (
-    <>
-        <h1>PROGRAM</h1>
-    </>
+    <section className="Program">
+        <PageHeader preTitle="Årets" title='PROGRAM'/>
+    </section>
 );
