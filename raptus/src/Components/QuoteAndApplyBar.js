@@ -13,7 +13,7 @@ function QuoteAndApplyBar() {
         </div>
         <div className="divider"/>
         <div className="apply-container">
-            <p>SØK FRIVILLIG, INTERVJUER OG STAND HER</p>
+            <p>SØK FRIVILLIG, INTERVJUER ELLER STAND I DAG!</p>
         </div>
     </section>
   )
