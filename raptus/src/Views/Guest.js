@@ -8,8 +8,7 @@ import Button from 'react-bootstrap/Button';
 export const Guest = withFirebase(({ firebase }) => {
     const { name } = useParams();
 
-    const guest = usePromise(firebase.guestByName(name));  
-    const expectedNewline = /\\n/g;
+    const guest = usePromise(firebase.guestByName(name));
 
     if (guest) {
         return (
@@ -20,7 +19,7 @@ export const Guest = withFirebase(({ firebase }) => {
                 </div>  
                 <div>
                     <h3 className="guest-name">{guest.name}</h3>
-                    <p style={{'whiteSpace': 'pre-wrap'}} className="guest-bio">{guest.bio.replace(expectedNewline, '\n\n')}</p>
+                    <p className="guest-bio">{guest.bio.replace(/\\n/g, '\n\n')}</p>
                 </div>
             </article>
           );    
