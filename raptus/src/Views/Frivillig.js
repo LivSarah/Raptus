@@ -1,7 +1,8 @@
 import React from "react";
+import { PageHeader } from '../Components/PageHeader';
 
 export const Frivillig = () => (
-    <>
-        <h1>Frivillig</h1>
-    </>
+    <section className="Frivillig">
+        <PageHeader preTitle="Bli" title='FRIVILLIG' />
+    </section>
 );
