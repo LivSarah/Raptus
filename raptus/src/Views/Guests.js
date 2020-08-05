@@ -1,14 +1,12 @@
 import React from "react";
 import './Guests.scss';
 import { GuestsCollection } from '../Components/GuestsCollection';
-import { Person } from '../Components/Person'
+import { Person } from '../Components/Person';
+import { PageHeader } from '../Components/PageHeader';
 
 export const Guests = () => (
     <article className="Guests">
-        <header>
-            <h4>Årets</h4>
-            <h1>GJESTER</h1>
-        </header>
+        <PageHeader preTitle="Årets" title='GJESTER'/>
 
         <div className="guests-grid">
             <GuestsCollection>
