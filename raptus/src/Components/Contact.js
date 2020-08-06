@@ -14,8 +14,8 @@ function Contact() {
                 Du finner oss på både Facebook og Instagram.
                 </p>
                 <div className="social-media">
-                  <a href="https://www.facebook.com/Raptuscomics/"><img src={require('../Assets/Images/facebook-icon.webp')} alt="facebook-logo"/></a>
-                  <a href="https://www.instagram.com/raptusfestivalen/"><img src={require('../Assets/Images/instagram-icon.webp')} alt="instagram-logo"/></a>
+                  <a href="https://www.facebook.com/Raptuscomics/"><img src={require('../Assets/Images/facebook-icon.png')} alt="facebook-logo"/></a>
+                  <a href="https://www.instagram.com/raptusfestivalen/"><img src={require('../Assets/Images/instagram-icon.png')} alt="instagram-logo"/></a>
                 </div>
             </div>
             <ContactForm/>
