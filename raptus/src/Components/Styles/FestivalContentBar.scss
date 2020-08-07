@@ -1,0 +1,39 @@
+.FestivalContentBar {
+    background-color: yellow;
+
+    padding: 100px;
+        h3 {
+        font-family: 'Permanent Marker';  
+        font-size: 40px; 
+        color: #c42128;
+        text-align: center;
+        transform: rotate(-10deg);
+        padding-bottom: 100px;
+    }
+
+    .grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50% 50%;
+        column-gap: 30px;
+        row-gap: 40px;
+    }
+
+    .element {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+        color: #0000d4;
+    }
+
+    .icon {
+        height: 80px;
+    }
+
+    .text {
+        text-align: center;
+    }
+}
