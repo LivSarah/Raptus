@@ -8,18 +8,7 @@ function StarringBar() {
 
   return (
     <section className="Starring-Bar">
-      <div className="starring-cloud">
-        <p>Starring:</p>
-        <svg viewBox='0 0 105 105'  >
-          <path d='M 25,60 
-                  a 20,20 1 0,0 0,40 
-                  h 50 
-                  a 20,20 1 0,0 0,-40 
-                  a 10,10 1 0,0 -15,-10 
-                  a 15,15 1 0,0 -35,10  
-                  z' />
-        </svg>
-      </div>
+      <img src={require('../Assets/Images/starring-cloud.png')} className="starring-cloud" />
       <div className="guests-grid">
         <GuestsCollection starring={true}>
           {(guests) => (
@@ -36,7 +25,7 @@ function StarringBar() {
           )}
         </GuestsCollection>
         <div className="view-all-guests">
-          <Link to="/gjester"><img src={require('../Assets/Images/se-alle-gjester.jpg')} alt={"view-all-guests"}/></Link>
+          <Link to="/gjester"><img className="view-all-guests" src={require('../Assets/Images/se-alle-gjester.jpg')} alt={"view-all-guests"}/></Link>
         </div>
       </div>
     </section>
