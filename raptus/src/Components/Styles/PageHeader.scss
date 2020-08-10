@@ -8,16 +8,22 @@
          h1 {
             font-family: 'Permanent Marker';   
             color: white;
-            font-size: 70px;
+            font-size: 10vw;
             text-align: center;
             transform: rotate(-10deg);
+            @media (max-width: 800px) {
+                font-size: 12vw;
+            }
          }
          h4 {
             font-family: 'Permanent Marker';  
-            font-size: 40px; 
+            font-size: 6vw; 
             color: #c42128;
             text-align: center;
             transform: rotate(-10deg);
+            @media (max-width: 800px) {
+                font-size: 9vw;
+            }
          }
          h4:after {
             display: inline-block;
