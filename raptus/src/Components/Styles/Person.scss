@@ -1,6 +1,9 @@
 .Person {
         position: relative;
         height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
     img {
         width: 100%;
@@ -12,14 +15,11 @@
     .name {
         color: white;
         position: absolute;
-        width: fit-content;
-        left: 50%; 
-        -webkit-transform: translate(-50%, 0);
         font-size: 20px;
         font-family: 'Rowdies';
         bottom: 30px;
         @media (max-width: 800px) {
-            font-size: 15px;
+            font-size: 16px;
             bottom: 15px;
         }
     }
@@ -27,13 +27,10 @@
     .profession {
         color: white; 
         position: absolute;
-        width: fit-content; 
-        left: 50%; 
-        -webkit-transform: translate(-50%, 0);
         bottom: 0px;
         font-size: 18px;
         @media (max-width: 800px) {
-            font-size: 13px;
+            font-size: 14px;
         }
     }
 
