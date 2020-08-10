@@ -1,7 +1,9 @@
 .FestivalContentBar {
-    background-color: yellow;
-
-    padding: 100px;
+    background-color: #e8f000;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-dotted-2.png");
+    /* TODO: Download the pattern*/
+    margin-bottom: 9px;
+    padding: 7vw;
         h3 {
         font-family: 'Permanent Marker';  
         font-size: 40px; 
@@ -18,12 +20,14 @@
         grid-template-rows: 50% 50%;
         column-gap: 30px;
         row-gap: 40px;
+        @media (max-width: 800px) {
+            grid-template-columns: 100%;
+        }
     }
 
     .element {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         row-gap: 10px;
         color: #0000d4;
@@ -35,5 +39,6 @@
 
     .text {
         text-align: center;
+        font-size: 100%;
     }
 }
