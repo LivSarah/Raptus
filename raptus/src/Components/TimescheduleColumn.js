@@ -1,8 +1,9 @@
 import React from "react";
+import './Styles/TimescheduleColumn.scss';
 
 function TimescheduleColumn({dayAndRoom}) {
 
-    let title;
+    let roomName;
     let schedule;
     
     const fridayRoom1 = [
@@ -83,52 +84,57 @@ function TimescheduleColumn({dayAndRoom}) {
         {time: "", postName: ""},
     ];
 
-    console.log("HELLO: ", dayAndRoom)
     switch(dayAndRoom){
         case 'fridayRoom1': 
-            title = 'Fredag';
+            roomName = 'Rom 1';
             schedule = fridayRoom1;
             break;
         case 'fridayRoom2':
-            title = 'Fredag';
+            roomName = 'Rom 2';
             schedule = fridayRoom2;
             break;
         case 'fridayRoom3': 
-            title = 'Fredag';
+            roomName = 'Rom 3';
             schedule = fridayRoom3;
             break; 
         case 'saturdayRoom1':
-            title = 'Lørdag';
+            roomName = 'Rom 1';
             schedule = saturdayRoom1;
             break;
         case 'saturdayRoom2': 
-            title = 'Lørdag';
+            roomName = 'Rom 2';
             schedule = saturdayRoom2;
             break;
         case 'saturdayRoom3':
-            title = 'Lørdag';
+            roomName = 'Rom 3';
             schedule = saturdayRoom3;
             break;
         case 'sundayRoom1':
-            title = 'Søndag';
+            roomName = 'Rom 1';
             schedule = sundayRoom1;
             break;
         case 'sundayRoom2': 
-            title = 'Søndag';
+            roomName = 'Rom 2';
             schedule = sundayRoom2;
             break;
         case 'sundayRoom3':
-            title = 'Søndag';
+            roomName = 'Rom 3';
             schedule = sundayRoom3;
             break;
         default: 
-            title = 'Something went wrong';
+            roomName = 'Something went wrong';
             break;
     }
 
     return (
-        <article>
-            <h3>{title}</h3>
+        <article className="TimescheduleColumn">
+            <h4>{roomName}</h4>
+            <div className="day-schedule">
+                {schedule.map((entry) => (
+                    <p key={entry.time}>{entry.time} {entry.postName}</p>
+
+                ))}
+            </div>
         </article>
     )
 }
