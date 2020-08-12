@@ -4,6 +4,31 @@
     .festival-schedule {
         background-color: #c42128;
         background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png"); /*TODO: download pattern*/
-        height: 1000px;
+        color: white;
+        padding: 7vw;
+    }
+
+    .day-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5vh;
+
+        h3 {
+            font-family: 'Permanent Marker'; 
+            font-size: 250%;
+            transform: rotate(-10deg);
+            margin-bottom: 3.5vh;
+        }
+    }
+
+    .schedule-columns {
+        display: flex;
+        flex-direction: row;
+        column-gap: 8vw;
+        @media (max-width: 800px) {
+            flex-direction: column;
+            row-gap: 5vh;
+        }
     }
 }
