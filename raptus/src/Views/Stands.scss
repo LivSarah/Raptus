@@ -1,0 +1,16 @@
+.Stands {
+    margin-bottom: 9px;
+
+    .stands-grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-rows: auto;
+        grid-column-gap: 9px;
+        grid-row-gap: 9px;
+        @media (max-width: 800px) {
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 9px;
+        }
+    }
+}
