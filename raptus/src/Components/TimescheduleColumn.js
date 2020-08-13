@@ -9,79 +9,107 @@ function TimescheduleColumn({dayAndRoom}) {
     const fridayRoom1 = [
         {time: "16:00", postName: "Dørene åpner"},
         {time: "16:15", postName: "Åpningsshow"},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
+        {time: "17:00", postName: "-"},
+        {time: "18:00", postName: "-"},
+        {time: "19:00", postName: "-"},
+        {time: "20:00", postName: "Dørene stenger"}
     ];
     const fridayRoom2 = [
         {time: "16:00", postName: "Dørene åpner"},
         {time: "16:15", postName: "-"},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
+        {time: "17:00", postName: "-"},
+        {time: "18:00", postName: "-"},
+        {time: "19:00", postName: "-"},
+        {time: "20:00", postName: "Dørene stenger"},
     ];
     const fridayRoom3 = [
         {time: "16:00", postName: "Dørene åpner"},
-        {time: "16.15", postName: "-"},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
+        {time: "16:15", postName: "-"},
+        {time: "17:00", postName: "-"},
+        {time: "18:00", postName: "-"},
+        {time: "19:00", postName: "-"},
+        {time: "20:00", postName: "Dørene stenger"},
     ];
     
     const saturdayRoom1 = [
-        {time: "16:00", postName: "Dørene åpner"},
-        {time: "16.15", postName: "-"},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
+        {time: "10:00", postName: "Dørene åpner"},
+        {time: "11:00", postName: "-"},
+        {time: "12:00", postName: "-"},
+        {time: "13:00", postName: "-"},
+        {time: "14:00", postName: "-"},
+        {time: "15:00", postName: "-"},
+        {time: "16:00", postName: "-"},
+        {time: "17:00", postName: "-"},
+        {time: "18:00", postName: "-"},
+        {time: "19:00", postName: "-"},
+        {time: "20:00", postName: "Dørene stenger"}
     ];
     
     const saturdayRoom2 = [
-        {time: "16:00", postName: "Dørene åpner"},
-        {time: "16.15", postName: "-"},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
+        {time: "10:00", postName: "Dørene åpner"},
+        {time: "11:00", postName: "-"},
+        {time: "12:00", postName: "-"},
+        {time: "13:00", postName: "-"},
+        {time: "14:00", postName: "-"},
+        {time: "15:00", postName: "-"},
+        {time: "16:00", postName: "-"},
+        {time: "17:00", postName: "-"},
+        {time: "18:00", postName: "-"},
+        {time: "19:00", postName: "-"},
+        {time: "20:00", postName: "Dørene stenger"}
     ];
     
     const saturdayRoom3 = [
-        {time: "16:00", postName: "Dørene åpner"},
-        {time: "16.15", postName: "-"},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
+        {time: "10:00", postName: "Dørene åpner"},
+        {time: "11:00", postName: "-"},
+        {time: "12:00", postName: "-"},
+        {time: "13:00", postName: "-"},
+        {time: "14:00", postName: "-"},
+        {time: "15:00", postName: "-"},
+        {time: "16:00", postName: "-"},
+        {time: "17:00", postName: "-"},
+        {time: "18:00", postName: "-"},
+        {time: "19:00", postName: "-"},
+        {time: "20:00", postName: "Dørene stenger"}
     ];
     
     const sundayRoom1 = [
-        {time: "16:00", postName: "Dørene åpner"},
-        {time: "16.15", postName: "-"},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
+        {time: "10:00", postName: "Dørene åpner"},
+        {time: "11:00", postName: "-"},
+        {time: "12:00", postName: "-"},
+        {time: "13:00", postName: "-"},
+        {time: "14:00", postName: "-"},
+        {time: "15:00", postName: "-"},
+        {time: "16:00", postName: "-"},
+        {time: "17:00", postName: "-"},
+        {time: "18:00", postName: "-"},
+        {time: "19:00", postName: "Dørene stenger"}
     ];
     
     const sundayRoom2 = [
-        {time: "16:00", postName: "Dørene åpner"},
-        {time: "16.15", postName: "-"},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
+        {time: "10:00", postName: "Dørene åpner"},
+        {time: "11:00", postName: "-"},
+        {time: "12:00", postName: "-"},
+        {time: "13:00", postName: "-"},
+        {time: "14:00", postName: "-"},
+        {time: "15:00", postName: "-"},
+        {time: "16:00", postName: "-"},
+        {time: "17:00", postName: "-"},
+        {time: "18:00", postName: "-"},
+        {time: "19:00", postName: "Dørene stenger"}
     ];
     
     const sundayRoom3 = [
-        {time: "16:00", postName: "Dørene åpner"},
-        {time: "16.15", postName: "-"},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
-        {time: "", postName: ""},
+        {time: "10:00", postName: "Dørene åpner"},
+        {time: "11:00", postName: "-"},
+        {time: "12:00", postName: "-"},
+        {time: "13:00", postName: "-"},
+        {time: "14:00", postName: "-"},
+        {time: "15:00", postName: "-"},
+        {time: "16:00", postName: "-"},
+        {time: "17:00", postName: "-"},
+        {time: "18:00", postName: "-"},
+        {time: "19:00", postName: "Dørene stenger"}
     ];
 
     switch(dayAndRoom){
