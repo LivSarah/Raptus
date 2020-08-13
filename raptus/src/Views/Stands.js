@@ -8,7 +8,7 @@ export const Stands = () => (
     <section className="Stands">
         <PageHeader preTitle="Årets" title='STANDS' />
 
-        <div className="stands-grid">
+        <article className="stands-grid">
             <StandsCollection>
               {(stands) => (
                   stands.map((stand) => (
@@ -16,12 +16,20 @@ export const Stands = () => (
                         name={stand.name} 
                         image={stand.image} 
                         to={`/stands/${stand.name}`}
-                        clickable={true} 
+                        clickable={false} 
                         key={stand.name}
                       />
                 ))
               )}
             </StandsCollection>
-        </div>
+        </article>
+
+        <article className="application-wrapper">
+            <h3>Søk om å ha stand på årets festival her!</h3>
+            <p>Det er begrenset med standsplasser, så her er det lurt å være 
+                tidlig ute med å søke Ett bord fra fredag til søndag koster 
+                350kr, inkludert en stol. Ytterligere bord koster 300kr/stk,
+                og ekstra stoler er 50kr/stk.</p>
+        </article>
     </section>
 );
