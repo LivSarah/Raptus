@@ -8,9 +8,32 @@
         grid-auto-rows: auto;
         grid-column-gap: 9px;
         grid-row-gap: 9px;
+        margin-bottom: 9px;
         @media (max-width: 800px) {
             grid-template-columns: 1fr 1fr;
             grid-row-gap: 9px;
+        }
+    }
+
+    .application-wrapper {
+        background-color: #e8f000;
+        background-image: url("https://www.transparenttextures.com/patterns/dark-dotted-2.png");
+        /* TODO: Download the pattern*/
+        display: flex;
+        flex-direction: column;
+        padding: 7vw;
+        color: #0000d4;
+        text-align: center;
+        align-items: center;
+        @media (max-width: 800px) {
+
+        }
+
+        p {
+            max-width: 600px;
+            font-family: 'Montserrat';
+            font-weight: bold;
+            line-height: 30px;
         }
     }
 }
