@@ -39,6 +39,11 @@ class Firebase {
         const snapshot = await this.db.collection('guests').where("name", "==", name).limit(1).get();
         return this.unwrapData(snapshot)[0];
     }
+
+    async stands() {
+        const snapshot = await this.db.collection('stands').get();
+        return this.unwrapData(snapshot);
+    }
 }
 
 export default Firebase;
