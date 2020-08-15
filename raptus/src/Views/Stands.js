@@ -5,10 +5,10 @@ import { Person } from '../Components/Person';
 import { PageHeader } from '../Components/PageHeader';
 
 export const Stands = () => (
-    <section className="Stands">
+    <main className="Stands">
         <PageHeader preTitle="Årets" title='STANDS' />
 
-        <article className="stands-grid">
+        <section className="stands-grid">
             <StandsCollection>
               {(stands) => (
                   stands.map((stand) => (
@@ -22,14 +22,14 @@ export const Stands = () => (
                 ))
               )}
             </StandsCollection>
-        </article>
+        </section>
 
-        <article className="application-wrapper">
+        <section className="application-wrapper">
             <h3>Søk om å ha stand på årets festival her!</h3>
             <p>Det er begrenset med standsplasser, så her er det lurt å være 
                 tidlig ute med å søke Ett bord fra fredag til søndag koster 
                 350kr, inkludert en stol. Ytterligere bord koster 300kr/stk,
                 og ekstra stoler er 50kr/stk.</p>
-        </article>
-    </section>
+        </section>
+    </main>
 );

@@ -5,10 +5,10 @@ import { Person } from '../Components/Person';
 import { PageHeader } from '../Components/PageHeader';
 
 export const Guests = () => (
-    <article className="Guests">
+    <main className="Guests">
         <PageHeader preTitle="Årets" title='GJESTER'/>
 
-        <div className="guests-grid">
+        <section className="guests-grid">
             <GuestsCollection>
               {(guests) => (
                   guests.map((guest) => (
@@ -23,6 +23,6 @@ export const Guests = () => (
                 ))
               )}
             </GuestsCollection>
-        </div>
-    </article>
+        </section>
+    </main>
 );

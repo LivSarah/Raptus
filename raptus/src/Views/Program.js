@@ -6,7 +6,7 @@ import TimescheduleColumn from '../Components/TimescheduleColumn';
 
 
 export const Program = () => (
-    <section className="Program">
+    <main className="Program">
         <PageHeader preTitle="Årets" title='PROGRAM'/>
 
         <FestivalContentBar />
@@ -44,5 +44,5 @@ export const Program = () => (
             </div>
         </article>
 
-    </section>
+    </main>
 );

@@ -12,7 +12,7 @@ export const Guest = withFirebase(({ firebase }) => {
 
     if (guest) {
         return (
-            <article className="Guest">
+            <main className="Guest">
                 <div>
                     <img className="guest-portrait" src={guest.image}></img>
                     <Button className="view-website-button" href={guest.website} target="_blank" variant="outline-light">Se nettside</Button>                
@@ -21,7 +21,7 @@ export const Guest = withFirebase(({ firebase }) => {
                     <h3 className="guest-name">{guest.name}</h3>
                     <p className="guest-bio">{guest.bio.replace(/\\n/g, '\n\n')}</p>
                 </div>
-            </article>
+            </main>
           );    
     } else {
         return <p style={{textAlign: 'center'}}>Laster...</p>
