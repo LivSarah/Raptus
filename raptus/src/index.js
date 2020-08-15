@@ -13,7 +13,8 @@ import Footer from "./Components/Footer";
 import SponsorsBar from "./Components/SponsorsBar";
 import { Navbar } from "./Components/Navbar";
 import * as serviceWorker from "./serviceWorker";
-import Firebase, { FirebaseContext } from "./Components/Firebase";
+import FirebaseContext from "./FirebaseContext";
+import Firebase from './Firebase';
 import { Guest } from "./Views/Guest";
 import { ScrollToTop } from "./Components/ScrollToTop";
 
