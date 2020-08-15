@@ -1,14 +1,9 @@
-import React from 'react';
-import { withFirebase } from './Firebase';
-import { usePromise } from '../Utils/usePromise';
+import React from "react";
+import { withFirebase } from "./Firebase";
+import { usePromise } from "../Utils/usePromise";
 
 export const StandsCollection = withFirebase(({ firebase, children }) => {
+  const stands = usePromise(firebase.stands(), []);
 
-    const stands = usePromise(firebase.stands(), []);
-                
-    return (
-        <>
-            {children(stands)}
-        </>
-    )
-})
+  return <>{children(stands)}</>;
+});
