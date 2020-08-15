@@ -24,7 +24,6 @@ ReactDOM.render(
         <ScrollToTop />
         <Navbar />
 
-        <main>
           <Switch>
             <Route exact path="/gjester">
               <Guests />
@@ -58,7 +57,6 @@ ReactDOM.render(
           <SponsorsBar /> 
 
           <Contact />
-        </main>
 
         <Footer />
       </Router>
