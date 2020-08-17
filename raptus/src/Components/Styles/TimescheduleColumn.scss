@@ -1,3 +1,30 @@
 .TimescheduleColumn {
-    color: white;
+  color: white;
+
+  .Collapsible {
+    &__trigger {
+      appearance: none;
+      background: none;
+      border: none;
+      color: inherit;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      font-size: 1.5rem;
+      &:after {
+        font-size: 15px;
+        content: "";
+        margin-left: 10px;
+        transition: transform 300ms;
+        @media (max-width: 800px) {
+          content: "\2B9F";
+        }
+      }
+      &.is-open::after {
+        transform: rotateZ(180deg);
+      }
+    }
+  }
 }
