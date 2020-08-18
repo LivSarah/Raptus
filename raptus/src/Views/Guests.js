@@ -1,8 +1,8 @@
 import React from "react";
 import "./Guests.scss";
-import { GuestsCollection } from "../Components/GuestsCollection";
-import { Person } from "../Components/Person";
-import { PageHeader } from "../Components/PageHeader";
+import { GuestsCollection } from "../Components/GuestsCollection/GuestsCollection";
+import { Person } from "../Components/Person/Person";
+import { PageHeader } from "../Components/PageHeader/PageHeader";
 
 export const Guests = () => (
   <main className="Guests">

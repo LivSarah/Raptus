@@ -1,5 +1,5 @@
 import React from "react";
-import { PageHeader } from "../Components/PageHeader";
+import { PageHeader } from "../Components/PageHeader/PageHeader";
 import './Cosplay.scss'
 
 export const Cosplay = () => (

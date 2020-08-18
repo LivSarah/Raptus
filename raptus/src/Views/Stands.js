@@ -1,8 +1,8 @@
 import React from "react";
 import "./Stands.scss";
-import { StandsCollection } from "../Components/StandsCollection";
-import { Person } from "../Components/Person";
-import { PageHeader } from "../Components/PageHeader";
+import { StandsCollection } from "../Components/StandsCollection/StandsCollection";
+import { Person } from "../Components/Person/Person";
+import { PageHeader } from "../Components/PageHeader/PageHeader";
 
 export const Stands = () => (
   <main className="Stands">

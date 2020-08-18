@@ -1,8 +1,8 @@
 import React from "react";
 import "./Program.scss";
-import { PageHeader } from "../Components/PageHeader";
-import FestivalContentBar from "../Components/FestivalContentBar";
-import TimescheduleColumn from "../Components/TimescheduleColumn";
+import { PageHeader } from "../Components/PageHeader/PageHeader";
+import FestivalContentBar from "../Components/FestivalContentBar/FestivalContentBar";
+import TimescheduleColumn from "../Components/TimescheduleColumn/TimescheduleColumn";
 
 export const Program = () => (
   <main className="Program">
