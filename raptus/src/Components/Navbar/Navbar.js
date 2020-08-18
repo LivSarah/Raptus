@@ -1,5 +1,5 @@
 import React from "react";
-import "./Styles/Navbar.scss";
+import "./Navbar.scss";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import classNames from "classnames";

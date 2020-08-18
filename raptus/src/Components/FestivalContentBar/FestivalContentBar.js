@@ -1,5 +1,5 @@
 import React from 'react';
-import './Styles/FestivalContentBar.scss';
+import './FestivalContentBar.scss';
 import { icons } from '../../Assets/Icons/IconsCollection';
 
 function FestivalContentBar() {

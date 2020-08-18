@@ -1,5 +1,5 @@
 import React from "react";
-import "./Styles/PageHeader.scss";
+import "./PageHeader.scss";
 
 export const PageHeader = ({ title, preTitle }) => (
   <header className="PageHeader">

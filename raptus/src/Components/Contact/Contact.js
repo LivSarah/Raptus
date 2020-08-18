@@ -1,5 +1,5 @@
 import React from 'react'
-import './Styles/Contact.scss'
+import './Contact.scss'
 import ContactForm from '../ContactForm/ContactForm'
 
 function Contact() {
@@ -14,8 +14,8 @@ function Contact() {
                 Du finner oss på både Facebook og Instagram.
                 </p>
                 <div className="social-media">
-                  <a href="https://www.facebook.com/Raptuscomics/"><img src={require('../Assets/Images/facebook-icon.png')} alt="facebook-logo"/></a>
-                  <a href="https://www.instagram.com/raptusfestivalen/"><img src={require('../Assets/Images/instagram-icon.png')} alt="instagram-logo"/></a>
+                  <a href="https://www.facebook.com/Raptuscomics/"><img src={require('../../Assets/Images/facebook-icon.png')} alt="facebook-logo"/></a>
+                  <a href="https://www.instagram.com/raptusfestivalen/"><img src={require('../../Assets/Images/instagram-icon.png')} alt="instagram-logo"/></a>
                 </div>
             </div>
             <ContactForm/>

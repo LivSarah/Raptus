@@ -1,5 +1,5 @@
 import React from 'react';
-import './Styles/Person.scss';
+import './Person.scss';
 import { Link } from "react-router-dom";
 
 export const Person = ({image, to=undefined, name, profession, clickable}) => {
