@@ -8,15 +8,15 @@ import { Program } from "./Views/Program";
 import { Stands } from "./Views/Stands";
 import { Cosplay } from "./Views/Cosplay";
 import { Frivillig } from "./Views/Frivillig";
-import Contact from "./Components/Contact";
-import Footer from "./Components/Footer";
-import SponsorsBar from "./Components/SponsorsBar";
-import { Navbar } from "./Components/Navbar";
+import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
+import SponsorsBar from "./Components/SponsorsBar/SponsorsBar";
+import { Navbar } from "./Components/Navbar/Navbar";
 import * as serviceWorker from "./serviceWorker";
 import FirebaseContext from "./FirebaseContext";
 import Firebase from './Firebase';
 import { Guest } from "./Views/Guest";
-import { ScrollToTop } from "./Components/ScrollToTop";
+import { ScrollToTop } from "./Components/ScrollToTop/ScrollToTop";
 
 ReactDOM.render(
   <React.StrictMode>
