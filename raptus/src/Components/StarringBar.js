@@ -8,7 +8,7 @@ function StarringBar() {
 
   return (
     <section className="Starring-Bar">
-      <img src={require('../Assets/Images/starring-cloud.png')} className="starring-cloud" />
+      <img src={require('../Assets/Images/starring-cloud.png')} className="starring-cloud" alt="starring-guests" />
       <div className="guests-grid">
         <GuestsCollection starring={true}>
           {(guests) => (
