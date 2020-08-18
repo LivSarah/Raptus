@@ -1,5 +1,5 @@
 import React from "react";
-import "./Styles/TimescheduleColumn.scss";
+import "./TimescheduleColumn.scss";
 import Collapsible from "react-collapsible";
 import { useMediaQuery } from "../../Utils/useMediaQuery";
 
