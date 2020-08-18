@@ -1,6 +1,6 @@
 import React from 'react';
 import './Styles/FestivalContentBar.scss';
-import { icons } from '../Assets/Icons/IconsCollection';
+import { icons } from '../../Assets/Icons/IconsCollection';
 
 function FestivalContentBar() {
     const gridElements = [

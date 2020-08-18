@@ -1,7 +1,7 @@
 import React from "react";
 import "./Styles/TimescheduleColumn.scss";
 import Collapsible from "react-collapsible";
-import { useMediaQuery } from "../Utils/useMediaQuery";
+import { useMediaQuery } from "../../Utils/useMediaQuery";
 
 function TimescheduleColumn({ dayAndRoom }) {
   let roomName;

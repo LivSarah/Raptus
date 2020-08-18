@@ -1,5 +1,5 @@
 import React from 'react'
-import './Styles/ActivitiesBar.scss'
+import './ActivitiesBar.scss'
 import {Button} from 'react-bootstrap';
 
 function ActivitiesBar() {

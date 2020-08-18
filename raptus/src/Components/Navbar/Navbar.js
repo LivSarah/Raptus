@@ -3,7 +3,7 @@ import "./Styles/Navbar.scss";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import classNames from "classnames";
-import { useRouteChange } from "../Utils/useRouteChange";
+import { useRouteChange } from "../../Utils/useRouteChange";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

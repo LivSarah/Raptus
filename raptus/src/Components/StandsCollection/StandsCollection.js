@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import FirebaseContext from "../FirebaseContext";
-import { usePromise } from "../Utils/usePromise";
+import FirebaseContext from "../../FirebaseContext";
+import { usePromise } from "../../Utils/usePromise";
 
 export const StandsCollection = ({ children }) => {
   const firebase = useContext(FirebaseContext);
