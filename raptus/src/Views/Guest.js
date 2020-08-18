@@ -14,8 +14,8 @@ export const Guest = () => {
   if (guest) {
     return (
       <main className="Guest">
-        <div>
-          <img className="guest-portrait" src={guest.image}></img>
+        <div className="portrait-and-link-wrapper">
+          <img className="guest-portrait" src={guest.image} alt={guest.name+`-portrait`}></img>
           <Button
             className="view-website-button"
             href={guest.website}
