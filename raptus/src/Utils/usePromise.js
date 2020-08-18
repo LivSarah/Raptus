@@ -11,7 +11,7 @@ export const usePromise = (promise, defaultValue=undefined) => {
                 console.error(error);
             }
         })()
-    }, []);
+    });
 
     return value;
 };
