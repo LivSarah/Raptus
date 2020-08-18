@@ -6,6 +6,7 @@
     padding: 50px 30px;
     display: flex;
     flex-direction: row;
+    column-gap: 4vw;
     justify-content: center;
     @media (max-width: 800px) {
         flex-direction: column;
@@ -13,7 +14,11 @@
         text-align: center;
     }
     
-    
+    .portrait-and-link-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
     .guest-portrait {
         width: 400px;
         height: 400px;
