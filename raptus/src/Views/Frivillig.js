@@ -1,13 +1,33 @@
 import React from "react";
 import { PageHeader } from "../Components/PageHeader/PageHeader";
+import { useForm } from "react-hook-form";
 import './Frivillig.scss';
 
-export const Frivillig = () => (
-  <main className="Frivillig">
-    <PageHeader preTitle="Bli" title="FRIVILLIG" />
+function Frivillig() {
 
-    <section className="content-wrapper">
+  const { register, handleSubmit, watch, errors } = useForm();
+  const onSubmit = data => console.log(data);
 
-    </section>
-  </main>
-);
+  console.log(watch("example")); // watch input value by passing the name of it
+
+  return (
+    <main className="Frivillig">
+      <PageHeader preTitle="Bli" title="FRIVILLIG" />
+
+      <section className="content-wrapper">
+        <form onSubmit={handleSubmit(onSubmit)}>
+
+          <input name="name" ref={register({ required: true })} />
+
+          <input name="birthdate" ref={register({ required: true })} />
+
+          {errors.exampleRequired && <span>This field is required</span>}
+
+          <input type="submit" />
+        </form>
+      </section>
+    </main>
+  );
+}
+
+export default Frivillig;
