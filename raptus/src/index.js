@@ -7,7 +7,7 @@ import { Guests } from "./Views/Guests";
 import { Program } from "./Views/Program";
 import { Stands } from "./Views/Stands";
 import { Cosplay } from "./Views/Cosplay";
-import { Frivillig } from "./Views/Frivillig";
+import Frivillig from "./Views/Frivillig";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import SponsorsBar from "./Components/SponsorsBar/SponsorsBar";
