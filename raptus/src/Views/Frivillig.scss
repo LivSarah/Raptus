@@ -7,4 +7,13 @@
       margin-bottom: 9px;
       padding: 7vw;
     }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        span {
+            color: red;
+        }
+    }
 }
