@@ -19,9 +19,11 @@ function Frivillig() {
 
           <input name="name" ref={register({ required: true })} />
 
-          <input name="birthdate" ref={register({ required: true })} />
+          <div className="input-error-wrapper">
+            <input name="birthdate" ref={register({ required: true })} />
 
-          {errors.exampleRequired && <span>This field is required</span>}
+            {errors.birthdate && <span>This field is required</span>}
+          </div>
 
           <input type="submit" />
         </form>
