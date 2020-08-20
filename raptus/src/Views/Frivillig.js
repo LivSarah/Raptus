@@ -15,6 +15,11 @@ function Frivillig() {
       <PageHeader preTitle="Bli" title="FRIVILLIG" />
 
       <section className="content-wrapper">
+        <span className="application-text">
+          Alt arbeid rundt Raptus-festivalen baserer seg på frivillig arbeid.
+
+          Søk om å bli frivillig i dag!
+        </span>
         <form onSubmit={handleSubmit(onSubmit)}>
 
           <input name="name" ref={register({ required: true })} />
